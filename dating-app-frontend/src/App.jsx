@@ -1,12 +1,12 @@
 import React from "react"
+import Header from "./components/Header"
 
 function App() {
   const [count, setCount] = React.useState(0)
 
   return (
     <div className="App">
-     <h1>Gilcllys</h1>
-     <button onClick={()=> setCount(count + 1)}>{count}</button>
+     <Header/> 
     </div>
   )
 }
