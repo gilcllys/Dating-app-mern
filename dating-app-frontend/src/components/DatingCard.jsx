@@ -1,5 +1,5 @@
 import React from "react";
-import DatingCard from "react-tinder-card";
+import TinderCard from "react-tinder-card";
 import styles from "./DatingCard.module.css";
 
 const DatingCards = () => {
@@ -34,7 +34,7 @@ const DatingCards = () => {
         <div className={styles.datingCards}>
             <div className={styles.datingCardsContainer}>
                 {people.map((person) => (
-                    <DatingCard
+                    <TinderCard
                         className={styles.swipe}
                         key={person.name}
                         preventSwipe={["up", "down"]}
@@ -46,11 +46,11 @@ const DatingCards = () => {
                         >
                             <h3>{person.name}</h3>
                         </div>
-                    </DatingCard>
+                    </TinderCard>
                 ))}
             </div>
         </div>
     );
 };
 
-export default DatingCard;
+export default DatingCards;
