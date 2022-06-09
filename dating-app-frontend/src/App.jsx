@@ -1,6 +1,7 @@
 import React from "react"
 import DatingCards from "./components/DatingCard"
 import Header from "./components/Header"
+import SwipeButtons from "./components/SwipeButtons"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
      <Header/> 
      <DatingCards />
+     <SwipeButtons />
     </div>
   )
 }
