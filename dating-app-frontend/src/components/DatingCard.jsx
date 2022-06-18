@@ -9,7 +9,6 @@ const DatingCards = () => {
     async function GetData() {
       const data = await fetch("https://mern-app-dating-backend.herokuapp.com/dating/cards");
       const json = await data.json()
-      console.log(json)
       setPeople(json);
     }
     GetData()
